@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Konversi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h1>Kalkulator Konversi</h1>
+      <div>
+        <label for="inputValue">Masukkan Nilai:</label>
+        <input type="number" id="inputValue" placeholder="Masukkan angka" />
+      </div>
+      <div>
+        <label for="conversionType">Pilih Konversi:</label>
+        <select id="conversionType">
+          <option value="kmToMiles">Kilometer ke Mil</option>
+          <option value="milesToKm">Mil ke Kilometer</option>
+          <option value="celsiusToFahrenheit">Celsius ke Fahrenheit</option>
+          <option value="fahrenheitToCelsius">Fahrenheit ke Celsius</option>
+        </select>
+      </div>
+      <button onclick="convert()">Konversi</button>
+      <div class="result">
+        <h2>Hasil: <span id="outputValue">-</span></h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
